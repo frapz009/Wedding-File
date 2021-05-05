@@ -6,6 +6,7 @@
   <title>Ralph & Dan</title>
   <script src="https://kit.fontawesome.com/7dc1030d55.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 
 </head>
 <body>
@@ -16,10 +17,10 @@
         </label>
 
       <ul>
-        <li><a href="#destination" id="nav_font_color">Destination</a></li>
-        <li><a href="#event details" id="nav_font_color">Event Details</a></li>
-        <li><a href="#gallery" id="nav_font_color">Gallery</a></li>
-        <li><a href="#RSVP" id="nav_font_color">RSVP</a></li>
+        <li><a href="#destination" onclick="toggleMenu()" id="nav_font_color">Destination</a></li>
+        <li><a href="#eventDetails" onclick="toggleMenu()" id="nav_font_color">Event Details</a></li>
+        <li><a href="#gallery" onclick="toggleMenu()" id="nav_font_color">Gallery</a></li>
+        <li><a href="#rsvp" onclick="toggleMenu()" id="nav_font_color">RSVP</a></li>
       </ul>
     </nav>
 
@@ -77,9 +78,10 @@
         </h3>
         <span class="underline" style="  border-bottom-color: #b18f3a;"></span>
         </div>
+        
       <div class="section_wrapper"> <!-- left part -->
         <div>
-          <div class="img_wrapper" style="background-image: url(images/discovery_parc.jpg);">
+          <div class="img_wrapper" style="background-image: url(images/discovery_parc.jpg); margin: auto;">
           </div>
           <p style="font-weight: 900;">Discovery Parc</p>
           <p style="font-weight: 900; font-size: .8em;">Located in Barangay Tilha-ong, Consolacion, Cebu. This place offers an overlooking venue. </p>
@@ -88,7 +90,7 @@
 
         <div class="section_wrapper"> <!-- right part -->
           <div>
-        <div class="img_wrapper" style="background-image: url(images/church.jpg)">
+        <div class="img_wrapper" style="background-image: url(images/church.jpg); margin: auto;">
         </div>
         <p style="font-weight: 900;">San Vincente Ferrer Parish</p>
         <p class="message_wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -98,7 +100,7 @@
       
       <section class="third_content" style="background: #50b796; text-align: center;">
         <div class="heading">
-          <h3 class="indent" style="color: #FFF;">getting there</h3>
+          <h3 class="indent" id="eventDetails" style="color: #FFF;">getting there</h3>
         <span class="underline" style="  border-bottom-color: #000;"></span>
         </div>
       <div class="section_wrapper"> <!-- left part -->
@@ -121,7 +123,13 @@
         </div>
       </section>
 
-      <section class="content" style="background-color: #FFF; ">Gallery
+      <section class="fourth_content" id="gallery">
+          <div class="heading">
+        <h3 class="indent">gallery
+        </h3>
+        <span class="underline" style="  border-bottom-color: #b18f3a;"></span>
+        </div>
+        
       </section>
 
       <section class="content" style="background-color: #C4FAf8; ">RSVP
